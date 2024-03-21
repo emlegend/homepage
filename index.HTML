@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: orange;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      padding: 20px;
+    }
+    #top-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: orange;
+      padding: 10px 0;
+      text-align: center;
+    }
+    #top-bar a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    #top-bar a:hover {
+      color: #fff;
+    }
+    h1, h2 {
+      color: orange;
+    }
+    p {
+      line-height: 1.6;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    ul li a {
+      color: orange;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    ul li a:hover {
+      color: #fff;
+    }
+    .sidebar, .sidebar-right {
+      background-color: orange;
+      width: 10%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+    }
+    .sidebar {
+      left: 0;
+    }
+    .sidebar-right {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar"></div>
+  <div id="container">
+    <div id="top-bar">
+      <a href="https://www.twitch.tv/yourusername">Twitch</a>
+      <a href="https://www.youtube.com/user/yourusername">YouTube</a>
+      <a href="https://open.spotify.com/user/yourusername">Spotify</a>
+    </div>
+    <h1><strong><span style="color:orange">em</span>legend</strong></h1>
+    <h2>About me</h2>
+    <p>I like playing grind games and Warhammer 40k.<br>My favorite game is War Thunder and in 40k I play the Orks.</p>
+    <br>
+    <br>
+    <h2>What content do I make</h2>
+    <p>I mostly make gaming live streams on Twitch and upload some highlights on YouTube.<br>I also enjoy producing music, which you can find on Spotify</p>
+  </div>
+  <div class="sidebar-right"></div>
+</body>
+</html>
