@@ -34,15 +34,17 @@
       text-align: center;
     }
     #top-bar a {
-      color: black;
+      color: black; /* changed the link color */
       text-decoration: none;
       margin: 0 10px;
+      transition: color 0.3s;
     }
     #top-bar a:hover {
-      color: #fff;
+      color: white;
     }
     h1, h2 {
       color: orange;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     p {
       line-height: 1.6;
@@ -61,7 +63,7 @@
       transition: color 0.3s;
     }
     ul li a:hover {
-      color: #fff;
+      color: white;
     }
     .sidebar, .sidebar-right {
       background-color: orange;
@@ -75,6 +77,14 @@
     }
     .sidebar-right {
       right: 0;
+    }
+    .video-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .video-container iframe {
+      width: 100%;
+      height: 400px; /* Adjust the height as needed */
     }
   </style>
 </head>
@@ -93,7 +103,13 @@
     <br>
     <h2>What content do I make</h2>
     <p>I mostly make gaming live streams on Twitch and upload some highlights on YouTube.<br>I also enjoy producing music, which you can find on Spotify</p>
+    
+    <!-- Embedding YouTube Video -->
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
   <div class="sidebar-right"></div>
 </body>
 </html>
+
